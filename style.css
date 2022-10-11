@@ -3,3 +3,33 @@
   margin: 0;
   border: 0;
 }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Silkscreen", Arial, Helvetica, sans-serif;
+  background-color: aquamarine;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15%;
+  font-size: xx-large;
+  font-weight: bold;
+  background-image: linear-gradient(
+    to left,
+    #841c26 20%,
+    #af125a 40%,
+    #e760eb 50%,
+    #00a9d4 60%,
+    #242dc4 70%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+main {
+  width: 90%;
+}
