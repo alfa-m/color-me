@@ -11,8 +11,8 @@ body {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  padding: 2%;
-  background-color: aquamarine;
+  padding: 5%;
+  background-color: #caf0f8;
 }
 
 header {
@@ -21,8 +21,8 @@ header {
   align-items: center;
   height: 15%;
   width: 100%;
-  margin: 0% 0% 2%;
-  font-size: x-large;
+  margin: 0% 0% 5%;
+  font-size: larger;
   font-weight: bold;
   font-family: "Silkscreen", Arial, Helvetica, sans-serif;
   background-image: linear-gradient(
