@@ -67,9 +67,43 @@ main {
   top: var(--square-init);
   left: var(--square-init);
   -webkit-animation: rainbow 20s steps(1) infinite;
+  animation: rainbow 30s steps(1) infinite;
 }
 
 @-webkit-keyframes rainbow {
+  0% {
+    box-shadow: var(--square-size) var(--square-size) darkblue;
+  }
+  10% {
+    box-shadow: var(--square-size) var(--square-size) blue;
+  }
+  20% {
+    box-shadow: var(--square-size) var(--square-size) turquoise;
+  }
+  30% {
+    box-shadow: var(--square-size) var(--square-size) greenyellow;
+  }
+  40% {
+    box-shadow: var(--square-size) var(--square-size) yellow;
+  }
+  50% {
+    box-shadow: var(--square-size) var(--square-size) orange;
+  }
+  60% {
+    box-shadow: var(--square-size) var(--square-size) red;
+  }
+  70% {
+    box-shadow: var(--square-size) var(--square-size) darkred;
+  }
+  80% {
+    box-shadow: var(--square-size) var(--square-size) darkmagenta;
+  }
+  90% {
+    box-shadow: var(--square-size) var(--square-size) indigo;
+  }
+}
+
+@keyframes rainbow {
   0% {
     box-shadow: var(--square-size) var(--square-size) darkblue;
   }
