@@ -2,6 +2,8 @@
   box-sizing: border-box;
   margin: 0;
   border: 0;
+  --square-size: 100px;
+  --square-init: -100px;
 }
 
 body {
@@ -11,18 +13,17 @@ body {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  padding: 5%;
+  padding: 2%;
   background-color: #caf0f8;
 }
 
 header {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 15%;
+  align-items: flex-start;
+  height: 20%;
   width: 100%;
-  margin: 0% 0% 5%;
-  font-size: larger;
+  font-size: large;
   font-weight: bold;
   font-family: "Silkscreen", Arial, Helvetica, sans-serif;
   background-image: linear-gradient(
@@ -40,11 +41,63 @@ header {
 
 main {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
   width: 100%;
   height: 100%;
-  padding: 3%;
+  /* padding: 3%; */
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
-  background-color: white;
+  background-color: cornsilk;
+}
+
+#square {
+  /* border: 1px black solid; */
+  display: flex;
+  width: var(--square-size);
+  height: var(--square-size);
+  position: relative;
+}
+
+#square::after {
+  content: "";
+  width: var(--square-size);
+  height: var(--square-size);
+  display: flex;
+  position: relative;
+  top: var(--square-init);
+  left: var(--square-init);
+  -webkit-animation: rainbow 20s steps(1) infinite;
+}
+
+@-webkit-keyframes rainbow {
+  0% {
+    box-shadow: var(--square-size) var(--square-size) darkblue;
+  }
+  10% {
+    box-shadow: var(--square-size) var(--square-size) blue;
+  }
+  20% {
+    box-shadow: var(--square-size) var(--square-size) turquoise;
+  }
+  30% {
+    box-shadow: var(--square-size) var(--square-size) greenyellow;
+  }
+  40% {
+    box-shadow: var(--square-size) var(--square-size) yellow;
+  }
+  50% {
+    box-shadow: var(--square-size) var(--square-size) orange;
+  }
+  60% {
+    box-shadow: var(--square-size) var(--square-size) red;
+  }
+  70% {
+    box-shadow: var(--square-size) var(--square-size) darkred;
+  }
+  80% {
+    box-shadow: var(--square-size) var(--square-size) darkmagenta;
+  }
+  90% {
+    box-shadow: var(--square-size) var(--square-size) indigo;
+  }
 }
