@@ -33,6 +33,7 @@ header {
     #00a9d4 60%,
     #242dc4 70%
   );
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
