@@ -1,2 +1,3 @@
-# color-rush
-A simple keyboard game
+# Color rush
+
+A simple keyboard game displayed on your browser.
