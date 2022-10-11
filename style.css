@@ -22,13 +22,13 @@ header {
   height: 15%;
   width: 100%;
   margin: 0% 0% 2%;
-  font-size: xx-large;
+  font-size: x-large;
   font-weight: bold;
   font-family: "Silkscreen", Arial, Helvetica, sans-serif;
   background-image: linear-gradient(
     to left,
-    #841c26 20%,
-    #af125a 40%,
+    #841c26 15%,
+    #af125a 30%,
     #e760eb 50%,
     #00a9d4 60%,
     #242dc4 70%
